@@ -274,3 +274,92 @@ XOR = exactly one
 IMPLIES = only false when (T → F)
 
 IFF = same truth value
+✅ 1. Contrapositive, Converse, Inverse
+
+The video explains these:
+
+1) Contrapositive
+
+P → Q
+same as
+¬Q → ¬P
+(always equivalent)
+
+2) Converse
+
+Q → P
+(not equivalent)
+
+3) Inverse
+
+¬P → ¬Q
+(also not equivalent)
+
+✅ 2. Logical Equivalence
+
+Two statements are equivalent when they always have the same truth values.
+
+Example:
+P → Q
+is equivalent to
+¬P OR Q
+
+✅ 3. Using Logical Equivalence to Simplify
+
+Example from video:
+(P OR (NOT P AND Q))
+simplifies to
+(P OR Q)
+
+They show this using a truth table.
+
+✅ 4. Predicates
+
+A predicate is like a function that gives true or false depending on input.
+
+Example:
+P(n): “n is a perfect square”
+
+✅ 5. Quantifiers
+
+Two types:
+
+Universal (∀)
+
+“For all”
+
+Existential (∃)
+
+“There exists”
+
+They also show symbols like:
+∀x ∈ ℕ : P(x)
+
+✅ 6. Combining Quantifiers
+
+Example from the video:
+Goldbach’s conjecture
+∀n (exists p, q such that p + q = n)
+
+They show how changing order changes the meaning.
+
+✅ 7. Negating Quantifiers
+
+The video teaches:
+
+¬(∀x P(x)) = ∃x ¬P(x)
+¬(∃x P(x)) = ∀x ¬P(x)
+
+Very important.
+
+✅ 8. Validity & Satisfiability
+
+They also explain:
+
+Valid
+
+Always true no matter what P, Q, R are.
+
+Satisfiable
+
+True for at least one combination.
