@@ -97,3 +97,180 @@ IF → THEN = only false when first is true and second is false
 
 ∃ = at least one
 
+1. NOT (¬P)
+
+This table shows the opposite.
+
+P	NOT P
+T (true)	F (false)
+F (false)	T (true)
+
+👉 Whatever P is, NOT P is the opposite.
+
+✅ 2. AND (P ∧ Q)
+
+Both must be true.
+
+P	Q	P AND Q
+T	T	T
+T	F	F
+F	T	F
+F	F	F
+
+👉 AND is true only when both P and Q are true.
+
+✅ 3. OR (P ∨ Q)
+
+At least one true.
+
+P	Q	P OR Q
+T	T	T
+T	F	T
+F	T	T
+F	F	F
+
+👉 OR is true when any one is true.
+(Even both)
+
+✅ 4. XOR (exclusive OR)
+
+Exactly one true.
+
+P	Q	P XOR Q
+T	T	F
+T	F	T
+F	T	T
+F	F	F
+
+👉 XOR is true only when one is true and the other is false.
+
+✅ 5. IMPLIES (P → Q)
+
+This is the tricky one.
+Wrong only when P is true and Q is false.
+
+P	Q	P → Q
+T	T	T
+T	F	F
+F	T	T
+F	F	T
+
+👉 Only false when:
+P = true
+Q = false
+
+All other cases = true.
+
+✅ 6. IFF (P ↔ Q)
+
+True when both are same.
+
+P	Q	P IFF Q
+T	T	T
+T	F	F
+F	T	F
+F	F	T
+
+👉 True when both true or both false.
+
+⭐ FINAL SUPER TINY SUMMARY
+
+NOT = opposite
+
+AND = both
+
+OR = at least one
+
+XOR = exactly one
+
+IMPLIES = only false when (T → F)
+
+IFF = same truth value1. NOT (¬P)
+
+This table shows the opposite.
+
+P	NOT P
+T (true)	F (false)
+F (false)	T (true)
+
+👉 Whatever P is, NOT P is the opposite.
+
+✅ 2. AND (P ∧ Q)
+
+Both must be true.
+
+P	Q	P AND Q
+T	T	T
+T	F	F
+F	T	F
+F	F	F
+
+👉 AND is true only when both P and Q are true.
+
+✅ 3. OR (P ∨ Q)
+
+At least one true.
+
+P	Q	P OR Q
+T	T	T
+T	F	T
+F	T	T
+F	F	F
+
+👉 OR is true when any one is true.
+(Even both)
+
+✅ 4. XOR (exclusive OR)
+
+Exactly one true.
+
+P	Q	P XOR Q
+T	T	F
+T	F	T
+F	T	T
+F	F	F
+
+👉 XOR is true only when one is true and the other is false.
+
+✅ 5. IMPLIES (P → Q)
+
+This is the tricky one.
+Wrong only when P is true and Q is false.
+
+P	Q	P → Q
+T	T	T
+T	F	F
+F	T	T
+F	F	T
+
+👉 Only false when:
+P = true
+Q = false
+
+All other cases = true.
+
+✅ 6. IFF (P ↔ Q)
+
+True when both are same.
+
+P	Q	P IFF Q
+T	T	T
+T	F	F
+F	T	F
+F	F	T
+
+👉 True when both true or both false.
+
+⭐ FINAL SUPER TINY SUMMARY
+
+NOT = opposite
+
+AND = both
+
+OR = at least one
+
+XOR = exactly one
+
+IMPLIES = only false when (T → F)
+
+IFF = same truth value
