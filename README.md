@@ -363,3 +363,109 @@ Always true no matter what P, Q, R are.
 Satisfiable
 
 True for at least one combination.
+1. First, the key idea of logic (very important)
+
+In mathematical logic, a statement is judged only by whether it is violated, not by whether it sounds natural in English.
+
+👉 “P implies Q” is considered FALSE only in one situation:
+
+P is true
+
+Q is false
+
+In every other case, it is considered TRUE.
+
+That single idea explains the whole table.
+
+2. The truth table again (with meaning)
+P	Q	P → Q	Meaning
+T	T	T	Promise kept
+T	F	F	Promise broken ❌
+F	T	T	No promise made
+F	F	T	No promise made
+3. Why only (T → F) is false
+
+Think of P → Q as a promise:
+
+“If P happens, then Q will happen.”
+
+Case by case:
+(1) P = T, Q = T
+
+“If you study, you will pass.”
+You studied and you passed.
+✅ Promise kept → TRUE
+
+(2) P = T, Q = F
+
+“If you study, you will pass.”
+You studied but failed.
+❌ Promise broken → FALSE
+
+👉 This is the only false case.
+
+(3) P = F, Q = T
+
+“If you study, you will pass.”
+You didn’t study, but still passed.
+🤷 No rule was violated → TRUE
+
+(4) P = F, Q = F
+
+“If you study, you will pass.”
+You didn’t study and didn’t pass.
+🤷 Still no violation → TRUE
+
+4. Now your confusing examples make sense
+Example 1
+
+“If pigs can fly, then you can understand the Chebyshev bound.”
+
+P = “Pigs can fly” → False
+
+Q = “You understand Chebyshev bound” → maybe False
+
+So we are in F → F, which is TRUE in logic.
+
+👉 This does NOT mean the Chebyshev bound is incomprehensible.
+It only means the statement was not violated.
+
+Example 2
+
+“If you can solve any problem we come up with, then you get an A.”
+
+Let:
+
+P = “You can solve all problems”
+
+Q = “You get an A”
+
+If you solve some but not all problems:
+
+P = False
+So P → Q is automatically TRUE, regardless of Q.
+
+👉 Logic alone does NOT guarantee you an A.
+👉 It only says no logical contradiction occurred.
+
+This is why English promises ≠ logical implication.
+
+5. Very important takeaway (exam gold)
+Logical implication is NOT causation
+Logical implication is NOT a real-life promise
+Logical implication is about truth preservation
+
+P → Q is false only when:
+
+P is true and Q is false
+
+That’s it.
+
+6. Do you need to memorize the table?
+
+❌ No
+✅ Just remember this one sentence:
+
+“An implication is false only when the hypothesis is true and the conclusion is false.”
+
+Everything else follows.
