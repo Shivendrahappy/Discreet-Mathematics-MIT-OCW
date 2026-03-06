@@ -910,7 +910,28 @@ This process helps models gradually improve performance.
 In a way, learning systems (both humans and machines) often follow:
 
 Guess → Error → Correction → Improvement
+Learning AI by Experiment: From Proof by Contradiction to Diffusion Models
 
+While studying MIT OCW discrete mathematics, I came across the concept of proof by contradiction. The idea is simple but powerful: assume something might be true, follow the logic, and if it leads to an impossible result, we reject the assumption and learn the correct truth.
+
+For example, mathematicians prove that √2 is irrational by first assuming the opposite — that it can be written as a fraction p/q. When this assumption leads to a contradiction, we conclude that the assumption must be false.
+
+Interestingly, I realized a similar idea while experimenting with AI image generation.
+
+I generated two images of a cat riding a bicycle using an AI model. One image looked correct, while the other came out slightly distorted.
+
+This helped me understand how diffusion-based image models such as Stable Diffusion actually learn.
+
+These models generate images through an iterative process of prediction and correction. Early guesses may be imperfect, but each step adjusts the noise and improves the image toward a more probable result. In a way, the model explores possibilities — including wrong ones — before converging toward something realistic.
+
+My small experiment made me appreciate how theoretical concepts from mathematics connect with modern machine learning. Even unexpected outputs can be valuable because they reveal where the model is uncertain.
+
+This kind of experimental learning — combining theory, coding, and observation — is what makes studying computer science exciting.
+
+Attached are the two generated images from my experiment.
+
+
+<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/b0eb9866-4798-4e8d-a7a7-1122d86fc57a" />
 
 
 
