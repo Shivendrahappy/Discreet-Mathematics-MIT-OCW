@@ -851,6 +851,65 @@ algorithms are correct
 algorithms are optimal
 
 This is the mathematical foundation of Computer Science.
+# Why AI Outputs Are Sometimes Correct and Sometimes Wrong
+
+While studying Machine Learning lectures from MIT OpenCourseWare, I noticed an interesting idea about how AI systems generate results.
+
+## AI models work using probability
+
+Large Language Models and image generators do not truly "know" facts. Instead, they predict outputs based on statistical patterns learned from large datasets.
+
+Example:
+
+Prompt:
+"The capital of France is ___"
+
+The model predicts:
+
+Paris
+
+This happens because the pattern appears frequently in training data.
+
+## When AI guesses wrong
+
+If the prompt requires missing information, the model may still produce an answer even when it should say "not enough information."
+
+Example:
+
+Triangle angles = 50°, 60°, 70°  
+Question: What is the area?
+
+The area cannot be determined from angles alone, but an AI might still generate a number because it is trained to produce an output.
+
+## Image generation example
+
+Prompt:
+"A cat riding a bicycle in space"
+
+The model combines patterns of:
+
+- cats
+- bicycles
+- space
+
+Sometimes the result looks realistic.
+
+Sometimes the result contains distortions (extra limbs, unusual shapes).
+
+## Why wrong results are useful in machine learning
+
+Many machine learning systems improve through an iterative process:
+
+1. Generate an initial guess
+2. Measure the error
+3. Adjust parameters
+4. Repeat
+
+This process helps models gradually improve performance.
+
+In a way, learning systems (both humans and machines) often follow:
+
+Guess → Error → Correction → Improvement
 
 
 
