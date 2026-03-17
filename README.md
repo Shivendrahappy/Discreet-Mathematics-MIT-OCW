@@ -1,6 +1,7 @@
-# Discreet-Mathematics-MIT-OCW
+# Discreet-Mathematics-MIT-OCW  6.042J Fall 2010 
+
 Discreet Mathematics MIT OCW
-PROOFS
+PROOFS,Proff.Tom Leighton
 1. Proposition
 
 A proposition is just a sentence that can be true or false.
@@ -932,6 +933,480 @@ Attached are the two generated images from my experiment.
 
 
 <img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/b0eb9866-4798-4e8d-a7a7-1122d86fc57a" />
+Core statement (Induction Axiom)
+
+You wrote:
+
+𝑃
+(
+0
+)
+P(0) is true
+
+𝑃
+(
+𝑛
+)
+⇒
+𝑃
+(
+𝑛
++
+1
+)
+P(n)⇒P(n+1) is true
+
+Then:
+
+👉 
+𝑃
+(
+𝑛
+)
+P(n) is true for all natural numbers
+
+💥 What this REALLY means (step-by-step)
+
+Let’s go slowly.
+
+Step 1: Start point
+
+You prove:
+
+👉 
+𝑃
+(
+0
+)
+P(0) is true
+
+So first domino falls.
+
+Step 2: Chain rule
+
+You prove:
+
+👉 If one is true, next is true
+
+So:
+
+If 
+𝑃
+(
+0
+)
+P(0) → 
+𝑃
+(
+1
+)
+P(1)
+
+If 
+𝑃
+(
+1
+)
+P(1) → 
+𝑃
+(
+2
+)
+P(2)
+
+If 
+𝑃
+(
+2
+)
+P(2) → 
+𝑃
+(
+3
+)
+P(3)
+
+Step 3: What happens logically
+
+Since:
+
+𝑃
+(
+0
+)
+P(0) is true
+
+𝑃
+(
+0
+)
+⇒
+𝑃
+(
+1
+)
+P(0)⇒P(1) → so 
+𝑃
+(
+1
+)
+P(1) is true
+
+𝑃
+(
+1
+)
+⇒
+𝑃
+(
+2
+)
+P(1)⇒P(2) → so 
+𝑃
+(
+2
+)
+P(2) is true
+
+𝑃
+(
+2
+)
+⇒
+𝑃
+(
+3
+)
+P(2)⇒P(3) → so 
+𝑃
+(
+3
+)
+P(3) is true
+
+👉 This continues forever
+
+🟡 So what is he “trying to say” in your notes?
+
+Your messy paragraph means:
+
+Once the first case is true, and each step leads to the next,
+then by repeating this reasoning again and again,
+all values become true.
+
+🔵 Why he says “reasonable axiom”
+
+He wrote:
+
+“Induction is really just an axiom”
+
+This means:
+
+👉 We accept it as a basic truth of natural numbers
+
+Because:
+
+Natural numbers are ordered: 0,1,2,3,...
+
+There are no gaps
+
+So if truth keeps passing forward → it covers all numbers
+
+🔥 The DOMINO analogy (most important)
+
+Imagine:
+
+Infinite dominoes: 0,1,2,3,...
+
+You prove:
+
+1️⃣ First domino falls
+2️⃣ Each domino knocks next
+
+👉 Then ALL dominoes fall
+
+⚠️ Why you feel sleepy here (important)
+
+This topic is:
+
+abstract
+
+logical
+
+not visual
+
+Your brain is saying:
+👉 “I don’t see anything concrete”
+
+So it shuts down.
+
+🟢 Final one-line understanding
+
+👉 Induction works because truth spreads step-by-step from the first case to all numbers.
+
+🧠 Now I test you (very important)
+
+Answer this:
+
+If I prove:
+
+𝑃
+(
+5
+)
+P(5) is true
+
+𝑃
+(
+𝑛
+)
+⇒
+𝑃
+(
+𝑛
++
+1
+)
+P(n)⇒P(n+1)
+
+Can I say all numbers are true?
+Core statement (Induction Axiom)
+
+You wrote:
+
+𝑃
+(
+0
+)
+P(0) is true
+
+𝑃
+(
+𝑛
+)
+⇒
+𝑃
+(
+𝑛
++
+1
+)
+P(n)⇒P(n+1) is true
+
+Then:
+
+👉 
+𝑃
+(
+𝑛
+)
+P(n) is true for all natural numbers
+
+💥 What this REALLY means (step-by-step)
+
+Let’s go slowly.
+
+Step 1: Start point
+
+You prove:
+
+👉 
+𝑃
+(
+0
+)
+P(0) is true
+
+So first domino falls.
+
+Step 2: Chain rule
+
+You prove:
+
+👉 If one is true, next is true
+
+So:
+
+If 
+𝑃
+(
+0
+)
+P(0) → 
+𝑃
+(
+1
+)
+P(1)
+
+If 
+𝑃
+(
+1
+)
+P(1) → 
+𝑃
+(
+2
+)
+P(2)
+
+If 
+𝑃
+(
+2
+)
+P(2) → 
+𝑃
+(
+3
+)
+P(3)
+
+Step 3: What happens logically
+
+Since:
+
+𝑃
+(
+0
+)
+P(0) is true
+
+𝑃
+(
+0
+)
+⇒
+𝑃
+(
+1
+)
+P(0)⇒P(1) → so 
+𝑃
+(
+1
+)
+P(1) is true
+
+𝑃
+(
+1
+)
+⇒
+𝑃
+(
+2
+)
+P(1)⇒P(2) → so 
+𝑃
+(
+2
+)
+P(2) is true
+
+𝑃
+(
+2
+)
+⇒
+𝑃
+(
+3
+)
+P(2)⇒P(3) → so 
+𝑃
+(
+3
+)
+P(3) is true
+
+👉 This continues forever
+
+🟡 So what is he “trying to say” in your notes?
+
+Your messy paragraph means:
+
+Once the first case is true, and each step leads to the next,
+then by repeating this reasoning again and again,
+all values become true.
+
+🔵 Why he says “reasonable axiom”
+
+He wrote:
+
+“Induction is really just an axiom”
+
+This means:
+
+👉 We accept it as a basic truth of natural numbers
+
+Because:
+
+Natural numbers are ordered: 0,1,2,3,...
+
+There are no gaps
+
+So if truth keeps passing forward → it covers all numbers
+
+🔥 The DOMINO analogy (most important)
+
+Imagine:
+
+Infinite dominoes: 0,1,2,3,...
+
+You prove:
+
+1️⃣ First domino falls
+2️⃣ Each domino knocks next
+
+👉 Then ALL dominoes fall
+
+⚠️ Why you feel sleepy here (important)
+
+This topic is:
+
+abstract
+
+logical
+
+not visual
+
+Your brain is saying:
+👉 “I don’t see anything concrete”
+
+So it shuts down.
+
+🟢 Final one-line understanding
+
+👉 Induction works because truth spreads step-by-step from the first case to all numbers.
+
+🧠 Now I test you (very important)
+
+Answer this:
+
+If I prove:
+
+𝑃
+(
+5
+)
+P(5) is true
+
+𝑃
+(
+𝑛
+)
+⇒
+𝑃
+(
+𝑛
++
+1
+)
+P(n)⇒P(n+1)
+
+Can I say all numbers are true?
 
 
 
