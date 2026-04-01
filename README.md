@@ -2239,6 +2239,110 @@ The same idea works for:
 
 <img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/79b648f7-116e-4425-9d53-c608b250a5d3" />
 
+Memory Rule (use this instead of full steps)
+
+Whenever you see Tromino Tiling, just remember:
+
+✅ 1. Divide
+
+👉 Split into 4 equal parts
+
+✅ 2. Center
+
+👉 Place ONE tromino at center
+
+✅ 3. Repeat
+
+👉 Each part now has 1 missing → solve again
+🧠 🎯 Induction Proof = 3 Fixed Blocks
+
+Whenever you forget, just remember:
+
+Base → Assume → Build
+
+✅ 1. Base Case (always same)
+
+Say:
+
+👉 “For 
+𝑛
+=
+1
+n=1, board is 2×2 with one missing”
+👉 “One tromino fills it”
+
+✔️ Done.
+
+✅ 2. Induction Hypothesis (just one line)
+
+Say:
+
+👉 “Assume it works for 
+2
+𝑘
+×
+2
+𝑘
+2
+k
+×2
+k
+”
+
+✔️ Don’t overthink.
+
+🔥 3. Induction Step (THIS is your Step 3 confusion)
+
+Just remember this structure:
+
+👉 Say this line:
+
+“For 
+2
+𝑘
++
+1
+×
+2
+𝑘
++
+1
+2
+k+1
+×2
+k+1
+, divide into 4 quadrants”
+
+👉 Then THIS (core idea):
+
+“Place one center tromino to create 3 missing squares”
+
+👉 Then finish:
+
+“Now each quadrant has 1 missing → apply hypothesis”
+
+🎯 That’s the entire proof
+
+You don’t need more.
+
+🧠 Ultra-Short Version (use this in exam/interview)
+
+Base: 2×2 works
+Assume: works for 
+2
+𝑘
+2
+k
+
+Step: divide 
+2
+𝑘
++
+1
+2
+k+1
+, place center tromino, reduce to 4 smaller problems
+Hence proved
 
 
 
