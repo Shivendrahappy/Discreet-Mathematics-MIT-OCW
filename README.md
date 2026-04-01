@@ -2028,7 +2028,216 @@ Hence, colors “connect”
 +
 1
 n+1 horses are same color
+Here is the clean, correct problem statement you should use in your GitHub or notes:
 
+🧩 Tromino Tiling Problem
+
+Given a chessboard of size
+
+2
+𝑛
+×
+2
+𝑛
+2
+n
+×2
+n
+
+(where 
+𝑛
+≥
+1
+n≥1),
+
+and exactly one square is missing from the board,
+
+👉 prove that the remaining board can be completely tiled using L-shaped trominoes.
+
+🔷 What is a Tromino?
+
+An L-shaped tromino is a shape made of 3 connected squares, like this:
+
+⬛ ⬛
+⬛
+
+It can be rotated in any direction.
+
+🎯 Objective
+Cover all remaining squares
+Use only L-shaped trominoes
+No overlap
+No gaps (except the one missing square)
+📌 Additional Result (important)
+
+Show that the number of trominoes used is:
+
+4
+𝑛
+−
+1
+3
+3
+4
+n
+−1
+	​
+
+🧠 What you need to prove
+The tiling is always possible for any 
+𝑛
+n
+The construction works using divide and conquer / recursion
+🔥 Simple version (for quick understanding)
+
+“A 
+2
+𝑛
+×
+2
+𝑛
+2
+n
+×2
+n
+ board with one missing square can always be filled using L-shaped tiles of size 3.”
+ 
+# Tromino Tiling (Clear Step-by-Step Explanation)
+
+## 🧩 Problem
+
+Given a board of size \(2^n \times 2^n\) with **one missing square**,  
+fill the board using only **L-shaped trominoes (3 squares each)**.
+
+---
+
+## 💡 Core Idea
+
+We solve this using **Divide and Conquer**.
+
+---
+
+## 🔢 Step-by-Step Explanation
+
+### ✅ Step 1: Start with Missing Square
+
+Example: 4×4 board with one missing square
+
+```
+⬜ ⬜ ⬜ ⬜
+⬜ ⬜ ⬜ ⬜
+⬜ ⬜ ❌ ⬜
+⬜ ⬜ ⬜ ⬜
+```
+
+---
+
+### ✅ Step 2: Divide into 4 Quadrants
+
+Split board into 4 equal parts:
+
+```
+Q1 | Q2
+-------
+Q3 | Q4
+```
+
+Only **one quadrant has the real missing square**.
+
+---
+
+### ✅ Step 3: Place ONE Center Tromino (MOST IMPORTANT)
+
+👉 This is where confusion happens. Read carefully.
+
+We place **exactly ONE L-shaped tromino at the center**.
+
+### ❗ Rule:
+- It must cover **3 squares near the center**
+- It must NOT cover the quadrant that already has the missing square
+
+---
+
+### 🎯 Example:
+
+If missing square is in **Q4**, then:
+
+👉 Place tromino covering center squares of:
+- Q1  
+- Q2  
+- Q3  
+
+```
+⬜ ⬜ ⬜ ⬜
+⬜ 🟩 🟩 ⬜
+⬜ 🟩 ❌ ⬜
+⬜ ⬜ ⬜ ⬜
+```
+
+🟩 = ONE tromino (3 connected squares)
+
+---
+
+### 🧠 What just happened?
+
+Now:
+
+- Q4 → already had 1 missing square  
+- Q1, Q2, Q3 → now each ALSO has 1 missing square (created by tromino)
+
+👉 So now ALL quadrants have exactly ONE missing square
+
+---
+
+### ✅ Step 4: Solve Recursively
+
+Now solve each quadrant separately.
+
+Each is smaller version of same problem.
+
+---
+
+## 📊 Formula
+
+Total squares = \(4^n\)
+
+One missing ⇒ \(4^n - 1\)
+
+Each tromino = 3 squares
+
+\[
+\text{Number of trominoes} = (4^n - 1) / 3
+\]
+
+---
+
+## 🎥 Note on Visualization
+
+The example shown is **4×4 for simplicity**.
+
+The same idea works for:
+- 8×8  
+- 16×16  
+- 32×32  
+
+---
+
+## 🧠 Key Insight
+
+> We don't solve the big board directly.  
+> We reduce it into smaller identical problems.
+
+---
+
+## 🚀 Concepts Used
+
+- Recursion  
+- Divide and Conquer  
+- Induction  
+
+---
+
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/79b648f7-116e-4425-9d53-c608b250a5d3" />
 
 
 
