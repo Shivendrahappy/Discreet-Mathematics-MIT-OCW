@@ -2343,6 +2343,227 @@ Step: divide
 k+1
 , place center tromino, reduce to 4 smaller problems
 Hence proved
+🧠 Truth Tables — ONLY IMPORTANT CASES
+
+Forget full tables. Remember these 5 patterns only.
+
+🔥 1️⃣ AND ( ∧ ) → “ALL TRUE”
+
+👉 Output is TRUE only if everything is TRUE
+
+Important cases:
+T ∧ T = T
+T ∧ F = F
+F ∧ anything = F
+🧠 Memory line
+
+“One false kills everything”
+
+🔥 2️⃣ OR ( ∨ ) → “AT LEAST ONE TRUE”
+
+👉 Output is TRUE if any one is TRUE
+
+Important cases:
+F ∨ F = F
+T ∨ anything = T
+🧠 Memory line
+
+“One true saves everything”
+
+🔥 3️⃣ NOT ( ¬ ) → “OPPOSITE”
+
+👉 Just flip
+
+¬T = F
+¬F = T
+🧠 Memory line
+
+“Reverse”
+
+🔥 4️⃣ IMPLICATION ( → ) → MOST IMPORTANT CONFUSION
+
+👉 A → B means:
+
+“If A then B”
+
+Only ONE false case:
+T → F = ❌ FALSE
+
+All others are TRUE:
+
+T → T = T
+F → T = T
+F → F = T
+🧠 Memory line (VERY IMPORTANT)
+
+“Only when promise is broken → false”
+
+🔥 5️⃣ EQUIVALENCE ( ↔ )
+
+👉 Same value → TRUE
+👉 Different → FALSE
+
+T ↔ T = T
+F ↔ F = T
+T ↔ F = F
+🧠 Memory line
+
+“Same = true, different = false”
+
+🚀 MOST IMPORTANT SHORTCUTS (Use in CS)
+✅ 1. Short-circuit thinking
+
+Instead of full table:
+
+AND → check for false first
+OR → check for true first
+✅ 2. Code understanding
+if (A and B):
+
+👉 Both must be true
+
+if (A or B):
+
+👉 At least one true
+
+✅ 3. Common mistake (avoid)
+
+People confuse:
+
+👉 F → T (they think false)
+
+❌ Wrong
+✔️ It is TRUE
+
+🧠 FINAL SUPER SHORT REVISION
+
+👉 AND → all true
+👉 OR → any true
+👉 NOT → flip
+👉 → → only T→F is false
+👉 ↔ → same values
+
+🔥 Why this is enough
+
+You don’t need full tables because:
+
+👉 In CS, you rarely write full tables
+👉 You think using patterns
+
+Why important in CS
+🔹 1. Digital Circuits
+AND, OR, NOT gates
+Used in CPU design, hardware logic
+🔹 2. Programming Conditions
+if (A and B):
+
+👉 Compiler internally follows truth logic
+
+🔹 3. Testing / Debugging
+Check all cases
+Avoid logical bugs
+🔹 4. Database Queries (SQL)
+WHERE A AND B OR C
+
+👉 Uses truth evaluation
+
+🧠 One-line memory
+
+“Truth tables = checking all possibilities of logic”
+
+🧠 2️⃣ Proof by Contradiction
+✅ Idea
+
+To prove something is true:
+
+👉 Assume it is false
+👉 Show this leads to impossible situation
+👉 So original statement is true
+
+🎯 Simple example
+
+Claim: √2 is irrational
+
+Assume: √2 is rational
+Leads to contradiction
+So assumption wrong
+🎯 Applications in CS
+🔹 1. Algorithm correctness
+Show wrong assumption breaks logic
+🔹 2. Complexity proofs
+Example: “No faster algorithm exists”
+🔹 3. Graph theory
+Proofs about connectivity, cycles
+🔹 4. Compiler logic / Formal verification
+Proving program properties
+🧠 One-line memory
+
+“Assume false → reach impossible → done”
+
+🧠 3️⃣ Tromino Tiling (Your topic)
+✅ Core Idea
+Board = 
+2
+𝑛
+×
+2
+𝑛
+2
+n
+×2
+n
+One missing
+Fill using L-shaped tiles
+🎯 Core Logic
+
+Divide → place center → repeat
+
+🎯 Applications in CS
+🔹 1. Divide and Conquer Algorithms
+Same pattern as:
+Merge Sort
+Quick Sort
+🔹 2. Recursion Thinking
+Breaking big problem into smaller ones
+🔹 3. Matrix / Grid Problems
+Used in:
+image processing
+game boards
+🔹 4. Memory Allocation (conceptual)
+Splitting memory blocks recursively
+🔹 5. Parallel Computing
+Divide work into equal parts
+🧠 One-line memory
+
+“Create equal subproblems using center tromino”
+
+🔥 FINAL REVISION (SUPER SHORT)
+🧩 Truth Table
+
+👉 Check all logical possibilities
+👉 Used in circuits, code, SQL
+
+🧩 Contradiction
+
+👉 Assume false → get impossible
+👉 Used in proofs, algorithms
+
+🧩 Tromino
+
+👉 Divide → center → recurse
+👉 Used in recursion & problem design
+
+🚀 What you should do now (important)
+
+Don’t just read.
+
+👉 Say this out loud once:
+
+“Truth table checks all cases”
+“Contradiction assumes false”
+“Tromino divides and balances”
+
+👉 That locks memory.
 
 
 
