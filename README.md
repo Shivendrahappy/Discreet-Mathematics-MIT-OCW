@@ -2565,5 +2565,43 @@ Don’t just read.
 
 👉 That locks memory.
 
+Date 7 April 2026
+Characteristics of a Good Proof
 
+A good proof should be:
+
+Correct → logically valid, no false steps
+Complete → no missing steps or gaps
+Clear → easy to understand
+Well-organized → follows a proper structure
+Elegant → simple and insightful (not unnecessarily complex)
+Brief (but sufficient) → not too long, but not skipping logic
+
+💡 A good proof is like a well-written program—structured, logical, and readable.
+
+🧩 Structure of a Logical Argument
+
+Typical flow:
+
+Start with given assumptions
+Apply logical steps
+Use implications (→) carefully
+Move step-by-step toward conclusion
+End with final statement (what you wanted to prove)
+🎯 Key Idea
+Logic should always flow downward step-by-step
+Avoid jumping randomly between steps
+Each line should follow clearly from the previous one
+🧠 Insight
+
+A well-written proof shows not just correctness, but clarity of thinking.
+
+⚠️ Note on Abstraction
+
+The concept of abstraction was developed in computer science (e.g., work at MIT by pioneers like John Guttag and Barbara Liskov).
+
+Abstraction helps us:
+manage complexity
+focus on important ideas
+ignore unnecessary details
 
