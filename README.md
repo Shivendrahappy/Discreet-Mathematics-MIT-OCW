@@ -2832,3 +2832,5 @@ Some configurations cannot be reached
 🧠 One-Line Insight
 
 If a required transformation breaks the invariant → it is impossible
+
+<img width="1200" height="1600" alt="17756462527891965697740488883682" src="https://github.com/user-attachments/assets/7f7a8452-dfae-4e6b-b52c-bb7baae2085d" />
