@@ -2697,4 +2697,138 @@ The more precise and rigorous your thinking is:
 ## 🎯 Takeaway
 
 > A proof must be clear, logical, and convincing — not just intuitive.
+🧩 Sliding Puzzle, Lemmas & Invariant Theorem
+📌 Problem Setup
+Initial State
+A   B   C
+D   E   F
+H   G   _
+Final State
+A   B   C
+D   E   F
+G   H   _
 
+👉 Only difference: H and G are swapped
+
+🎯 Goal
+
+Determine whether the final configuration is reachable from the initial configuration using legal moves.
+
+⚙️ Legal Moves
+A tile can slide into the empty space _
+Only adjacent (up, down, left, right) moves are allowed
+🔹 Lemma 1: Row Moves Preserve Order
+Before Row Move
+A   B   C
+D   E   F
+H   G   _
+After Row Move
+A   B   C
+D   E   F
+H   _   G
+🔍 Observation
+Tiles shift horizontally
+No tile crosses another
+
+👉 Order of H and G remains the same
+
+✅ Conclusion (Lemma 1)
+
+Row moves do NOT change the relative order of elements
+
+🔸 Lemma 2: Column Moves Change Order
+Before Column Move
+A   B   C
+D   E   F
+H   G   _
+Step 1: Move F down
+A   B   C
+D   E   _
+H   G   F
+Step 2: Move C down
+A   B   _
+D   E   C
+H   G   F
+🔍 Observation
+
+Focus on C and F:
+
+Before:
+
+C
+F
+
+After movement:
+
+C moves downward
+It crosses other tiles
+
+👉 Relative order changes
+
+✅ Conclusion (Lemma 2)
+
+Column moves change the relative order of elements (due to crossing)
+
+🧠 Key Concept: Invariant
+❓ What is an Invariant?
+
+An invariant is a property that:
+
+remains unchanged (or follows a fixed rule) during all allowed moves
+
+📌 Invariant in This Puzzle
+
+👉 The invariant is:
+
+Parity (even/odd nature) of the relative order of elements
+
+Simplified meaning:
+The arrangement of tiles has a hidden structure
+Moves can only change it in a restricted way
+You cannot freely swap any two tiles
+🔍 Why Invariant Matters
+Row moves → do not change order
+Column moves → change order, but in a controlled pattern
+
+👉 So overall:
+
+The system preserves a hidden constraint (invariant)
+
+🧩 Applying the Invariant
+
+We need:
+
+H   G   →   G   H
+
+👉 This is a direct swap (complete reversal)
+
+🔍 Check using lemmas
+Row moves → ❌ cannot change order
+Column moves → ✅ change order but not arbitrarily
+
+👉 The required swap violates the invariant
+
+🚫 Final Theorem
+
+Not all configurations of the sliding puzzle are reachable
+
+❌ Conclusion for Given Puzzle
+
+👉 The transformation:
+
+H G → G H
+
+is IMPOSSIBLE
+
+🔥 Final Takeaway
+Row moves → preserve order
+Column moves → controlled change
+Invariant → restricts all movements
+
+👉 Therefore:
+
+Some configurations cannot be reached
+
+🧠 One-Line Insight
+
+If a required transformation breaks the invariant → it is impossible
