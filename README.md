@@ -2853,4 +2853,106 @@ We just compare types
 A B C D E F H G → 1 (odd)
 A B C D E F G H → 0 (even)
 → NOT possible
+# 🧩 Sliding Puzzle — Invariant (Parity) Notes
 
+## 🎯 Purpose of This Topic
+
+👉 This topic is mainly to understand:
+
+> **Invariant (what stays unchanged)**
+
+---
+
+## 🧠 What is an Invariant?
+
+An **invariant** is:
+
+> A property that **does not change** during allowed moves
+
+In this puzzle:
+
+👉 The invariant is the **parity (even/odd nature) of inversion count**
+
+---
+
+## 🔑 What is a “Wrong Pair”?
+
+A **wrong pair** (called an **inversion**) is:
+
+> When a larger element comes **before** a smaller element
+
+Example:
+
+* H before G → ❌ wrong pair (inversion)
+
+---
+
+## 🎯 Rule
+
+1. Count **inversions (wrong pairs)**
+2. Determine **even or odd**
+3. Compare initial vs final
+
+* Same type → ✔️ Possible
+* Different type → ❌ Not Possible
+
+---
+
+## 🧩 Example 1 (Classic)
+
+### Initial:
+
+A B C D E F G H
+
+### Final:
+
+A B C D E F H G
+
+### Count:
+
+* H before G → 1
+
+👉 Final = 1 (ODD)
+👉 Initial = 0 (EVEN)
+
+❌ Different → **NOT POSSIBLE**
+
+---
+
+## 🧩 Example 2 (Your Example)
+
+### Initial:
+
+A B C D E F G H
+
+### Final:
+
+A B C D H E F G
+
+### Count:
+
+* H before E → 1
+* H before F → 2
+* H before G → 3
+
+👉 Total = 3 (ODD)
+👉 Initial = 0 (EVEN)
+
+❌ Different → **NOT POSSIBLE**
+
+---
+
+## 🔥 Final Takeaway
+
+> Invariant = parity of inversions
+> If invariant differs → configuration impossible
+
+---
+
+## 🚀 Learning Outcome
+
+✔️ Understood invariant concept
+✔️ Applied using inversion count
+✔️ Ready to move forward
+
+---
