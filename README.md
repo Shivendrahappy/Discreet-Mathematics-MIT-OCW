@@ -700,14 +700,7 @@ Assume NOT P
 Therefore NOT P is false
 
 So P is true
-8️⃣ Your plan tonight
 
-Good sequence:
-
-1️⃣ Study contradiction proof 1 hour
-2️⃣ Complete I-20 form
-3️⃣ Upload loan approval
-4️⃣ Sleep
 
 If you want, I can also show you the easiest contradiction proof in computer science:
 
