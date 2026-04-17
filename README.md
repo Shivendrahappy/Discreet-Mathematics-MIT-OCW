@@ -1,7 +1,7 @@
-# Discreet-Mathematics-MIT-OCW  6.042J Fall 2010 
+# Discret-Mathematics-MIT-OCW  6.042J Fall 2010 
 
-Discreet Mathematics MIT OCW
-PROOFS,Proff.Tom Leighton
+Discrete Mathematics MIT OCW
+PROOFS, Proff.Tom Leighton
 1. Proposition
 
 A proposition is just a sentence that can be true or false.
