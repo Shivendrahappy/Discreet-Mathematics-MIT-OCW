@@ -2941,11 +2941,60 @@ A B C D H E F G
 > If invariant differs → configuration impossible
 
 ---
+22 april 2026
+📘 Strong Induction – Sum of 2s and 3s
+🧩 Problem
 
-## 🚀 Learning Outcome
+Prove that every integer n≥2 can be written as a sum of 2s and 3s.
 
-✔️ Understood invariant concept
-✔️ Applied using inversion count
-✔️ Ready to move forward
+✅ Example (n = 8)
+
+Different ways to form 8:
+
+8 = 2 + 3 + 3
+8 = 2 + 2 + 2 + 2
+8 = 6 + 2
+🔁 Key Step (Induction Idea)
+
+To build 8:
+
+8 − 2 = 6
+6 can already be written as (3 + 3)
+
+So:
+
+8 = 6 + 2 ✔️
+🧠 General Idea
+
+To build any number n+1:
+
+subtract 2 → (n+1)−2=n−1
+
+If n−1≥2, then:
+
+it is already possible (by assumption)
+
+So:
+
+n+1=(n−1)+2 ✔️
+🔄 Alternative
+
+We can also subtract 3:
+
+(n+1)−3=n−2
+
+If n−2≥2, then:
+
+n+1=(n−2)+3 ✔️
+🔑 Core Idea
+
+Reduce to a smaller number → use known result → add back (2 or 3)
+
+🎯 Final Takeaway
+
+Every number ≥ 2 can be built using 2 and 3 because:
+
+smaller numbers work
+larger numbers can be formed from them
 
 ---
