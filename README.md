@@ -3021,6 +3021,15 @@ Degree means:
 Number of edges touching a vertex.
 
 Example:
+<img width="1402" height="1122" alt="image" src="https://github.com/user-attachments/assets/e8c24b08-e8fc-4992-9ecc-e7c585e5b31a" />
+
+
+
+
+
+
+
+
 
 A ----- B
 | \     |
