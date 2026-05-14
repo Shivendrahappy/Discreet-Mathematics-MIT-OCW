@@ -2997,4 +2997,95 @@ Every number ≥ 2 can be built using 2 and 3 because:
 smaller numbers work
 larger numbers can be formed from them
 
+
+
 ---
+Date = 14 -MAY-2026
+
+
+Graph Theory Basics – MIT 6.042J Notes
+Graph Definition
+
+A graph is written as:
+
+G=(V,E)
+
+Where:
+
+V = set of vertices (nodes)
+E = set of edges (connections)
+Degree of a Vertex
+
+Degree means:
+
+Number of edges touching a vertex.
+
+Example:
+
+A ----- B
+| \     |
+|  \    |
+|   \   |
+C ----- D
+
+Edges:
+
+AB
+AC
+AD
+BD
+CD
+Degrees
+deg(A)=3
+deg(B)=2
+deg(C)=2
+deg(D)=3
+Total Degree Sum
+3+2+2+3=10
+
+So:
+
+∑deg(v)=10
+Number of Edges
+∣E∣=5
+Handshaking Lemma
+∑deg(v)=2∣E∣
+
+Verification:
+
+2×5=10
+
+Hence:
+
+∑deg(v)=10=2∣E∣
+
+✔️ Verified.
+
+Why Handshaking Lemma Works
+
+Each edge connects exactly two vertices.
+
+So:
+
+Every edge contributes +1 degree to one endpoint
+and +1 degree to the other endpoint
+
+Therefore:
+
+Each edge contributes A total of 2 degree counts.
+
+Hence:
+
+2∣E∣
+Important Insight
+
+The graph does NOT need to be linear.
+
+Even if:
+
+One vertex touches many edgesThe 
+graph looks messy
+
+The formula still works because:
+
+Every edge still has exactly two ends.
