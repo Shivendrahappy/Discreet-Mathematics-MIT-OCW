@@ -3277,6 +3277,254 @@ w
 	​
 
 ∣
+
+Chicago Survey Example – Final Graph Theory Note
+
+MIT Professor used graph theory to analyze a real-world survey claim from Chicago.
+
+The survey claimed:
+
+“Men report about 74% more opposite-gender partners on average than women.”
+
+Step 1 — Model Using Bipartite Graph
+
+Relationships were modeled as a bipartite graph.
+
+Men Set
+V
+m
 	​
+
+Women Set
+V
+w
+	​
+
+
+Each heterosexual relationship becomes one edge:
+
+Man  --------  Woman
+Step 2 — Important Counting Principle
+
+Every edge contributes:
+
+once to men side
+once to women side
+
+So total relationships are the SAME from both sides.
+
+Thus:
+
+Total men degree sum=∣E∣
+Total women degree sum=∣E∣
+Step 3 — Average Opposite-Gender Partners
+
+Average for men:
+
+A
+m
+	​
+
+=
+∣V
+m
+	​
+
+∣
+∣E∣
+	​
+
+
+Average for women:
+
+A
+w
+	​
+
+=
+∣V
+w
+	​
+
+∣
+∣E∣
+	​
+
+Step 4 — Ratio Formula
+
+Dividing both equations:
+
+A
+w
+	​
+
+A
+m
+	​
+
+	​
+
+=
+∣V
+m
+	​
+
+∣
+∣V
+w
+	​
+
+∣
+	​
+
+
+This is the key graph theory result.
+
+Step 5 — Chicago Census Data
+
+Professor then used approximate U.S./Chicago population data written on the board:
+
+∣V∣≈300M
+∣V
+m
+	​
+
+∣≈147.6M
+∣V
+w
+	​
+
+∣≈152.4M
+Step 6 — Substitute Into Formula
+
+Using:
+
+A
+w
+	​
+
+A
+m
+	​
+
+	​
+
+=
+∣V
+m
+	​
+
+∣
+∣V
+w
+	​
+
+∣
+	​
+
+
+we get:
+
+A
+w
+	​
+
+A
+m
+	​
+
+	​
+
+=
+147.6
+152.4
+	​
+
+≈1.0325
+
+So mathematically:
+
+A
+m
+	​
+
+≈1.03A
+w
+	​
+
+
+Meaning:
+
+men should have only about 3% more opposite-gender partners on average.
+
+Step 7 — Compare With Survey Claim
+
+Survey claimed:
+
+A
+m
+	​
+
+/A
+w
+	​
+
+≈1.74
+
+Graph theory + census data predicted:
+
+A
+m
+	​
+
+/A
+w
+	​
+
+≈1.03
+
+Large mismatch.
+
+Important Interpretation
+
+Professor was NOT directly saying:
+
+survey fake
+men lying
+women lying
+
+Instead, the lecture showed that:
+
+real-world statistical claims can be checked using mathematical reasoning.
+
+Possible reasons for mismatch:
+
+sampling bias
+reporting errors
+exaggeration
+incomplete assumptions
+different survey groups
+Relation With Small Classroom Bipartite Graph
+
+Small graph example:
+
+teaches counting technique visually
+
+Chicago survey example:
+
+applies the same graph theory logic to real population data
+Final MIT Lecture Conclusion
+
+Graph theory is not only about abstract graphs.
+
+It can also:
+
+model social systems
+analyze averages
+test consistency of survey claims
+connect mathematics with reality
+Final One-Line Understanding
+
+Every heterosexual relationship creates one edge counted from both sides, so graph theory can mathematically test whether survey averages are logically consistent.​
 
 
