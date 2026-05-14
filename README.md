@@ -3098,3 +3098,204 @@ graph looks messy
 The formula still works because:
 
 Every edge still has exactly two ends.
+
+
+Bipartite Graph
+
+
+<img width="1451" height="1084" alt="image" src="https://github.com/user-attachments/assets/4be521f1-8eab-492f-9354-a3b9aee1786d" />
+
+Bipartite Graph
+
+A bipartite graph is a graph where vertices are divided into two groups and edges connect only between groups.
+
+In this example:
+
+Men Set
+V
+m
+	​
+
+={Tom, Ben, Jude, Keith, Josh}
+∣V
+m
+	​
+
+∣=5
+Women Set
+V
+w
+	​
+
+={Nicole, Penelope, Katie}
+∣V
+w
+	​
+
+∣=3
+Graph Diagram
+Men                          Women
+
+Tom      -----------         Nicole
+ |  \                        / | \
+ |   \                      /  |  \
+ |    \                    /   |   \
+ |     -----------        Penelope
+ |
+ -----------              Katie
+
+Ben      -----------      Nicole
+
+Jude     -----------      Nicole
+
+Keith    -----------      Nicole
+
+Josh     -----------      Penelope
+ |
+ -----------              Katie
+Degree of Each Vertex
+Men Side
+
+Tom connected to:
+
+Nicole
+Penelope
+deg(Tom)=2
+
+Ben connected to:
+
+Nicole
+deg(Ben)=1
+
+Jude connected to:
+
+Nicole
+deg(Jude)=1
+
+Keith connected to:
+
+Nicole
+deg(Keith)=1
+
+Josh connected to:
+
+Penelope
+Katie
+deg(Josh)=2
+Total Men Degree Sum
+2+1+1+1+2=7
+Women Side
+
+Nicole connected to:
+
+Tom
+Ben
+Jude
+Keith
+deg(Nicole)=4
+
+Penelope connected to:
+
+Tom
+Josh
+deg(Penelope)=2
+
+Katie connected to:
+
+Josh
+deg(Katie)=1
+Total Women Degree Sum
+4+2+1=7
+Total Number of Edges
+∣E∣=7
+Average Opposite-Gender Partners
+Men Average
+A
+m
+	​
+
+=
+∣V
+m
+	​
+
+∣
+∣E∣
+	​
+
+A
+m
+	​
+
+=
+5
+7
+	​
+
+=1.4
+Women Average
+A
+w
+	​
+
+=
+∣V
+w
+	​
+
+∣
+∣E∣
+	​
+
+A
+w
+	​
+
+=
+3
+7
+	​
+
+≈2.33
+Important Observation
+
+In this example:
+
+A
+w
+	​
+
+>A
+m
+	​
+
+
+Women have larger average because:
+
+same number of edges
+but divided among fewer women
+Ratio Formula
+A
+w
+	​
+
+A
+m
+	​
+
+	​
+
+=
+∣V
+m
+	​
+
+∣
+∣V
+w
+	​
+
+∣
+	​
+
+
