@@ -3133,26 +3133,7 @@ w
 	​
 
 ∣=3
-Graph Diagram
-Men                          Women
 
-Tom      -----------         Nicole
- |  \                        / | \
- |   \                      /  |  \
- |    \                    /   |   \
- |     -----------        Penelope
- |
- -----------              Katie
-
-Ben      -----------      Nicole
-
-Jude     -----------      Nicole
-
-Keith    -----------      Nicole
-
-Josh     -----------      Penelope
- |
- -----------              Katie
 Degree of Each Vertex
 Men Side
 
