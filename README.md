@@ -3558,21 +3558,7 @@ C2=6.002
 C3=6.003
 C4=6.042
 C5=6.034
-3. Graph Diagram
-                 C1 (6.041)
-                 /         \
-                /           \
-               /             \
-      C4 (6.042) -------- C2 (6.002)
-               \             /
-                \           /
-                 \         /
-                 C3 (6.003)
-
-                      |
-                      |
-                      |
-                 C5 (6.034)
+3. Graph Diagram above
 4. Meaning of Edges
 
 Example:
