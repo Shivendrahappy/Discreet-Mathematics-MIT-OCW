@@ -3690,7 +3690,7 @@ Different interpretation.
 
 Final Understanding
 
-Graph coloring minimizes resources (colors/time slots) while ensuring connected nodes never share the same color.
+Graph coloring minimizes resources (colors/time slots) while ensuring connected nodes never share the same color..
 
 
 
