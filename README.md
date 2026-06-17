@@ -4015,6 +4015,10 @@ Keep d + 1 colors available
 
 One color always survives
 
+From my takeaway note
+<img width="1542" height="2048" alt="image" src="https://github.com/user-attachments/assets/14c1b61c-7fff-4883-9afa-ed21e7db1e70" />
+
+
 
 
 
